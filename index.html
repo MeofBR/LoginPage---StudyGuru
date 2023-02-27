@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyGuru | Login</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="main-content">
+        <div class="img-container">
+          <h2>Study Guru.</h2>
+          <img src="./assets/login_image.fw.png" alt="Login Image" class="img-left">
+        </div>
+        <div class="login-container">
+          <p class="default-text right">Já possui uma conta?   <a href="./login.html">  Login</a></p>
+          <h1>Crie sua conta</h1>
+          <label for="username" class="label-title">Usuário</label>
+          <input type="text" id="username" class="label-field">
+          <label for="email" class="label-title">Email</label>
+          <input type="email" id="email" class="label-field">
+            <div class="pass-confirm-container">
+              <div class="up-down">
+                <label for="password" class="label-title">Senha</label>
+                <input type="password" id="password" class="label-field pass">
+              </div>
+              <div class="up-down">
+                <label for="confirm-password" class="label-title">Repetir Senha</label>
+                <input type="password" id="confirm-password" class="label-field pass">        
+              </div>              
+            </div>
+            <div class="side-side">
+              <input type="checkbox" name="agree-terms" id="agree-terms" class="checkbox-style">
+              <p class="default-text">Ao criar a conta, voce aceita os Termos de Uso e Serviço, e Politicas de Privacidade</p>
+            </div>    
+            <button class="main-button">Criar Conta</button>
+            <br>
+            <div id="linha-ou">
+              <span> Ou </span>
+            </div>
+            <div class="other-account-login">
+              <img src="https://icongr.am/devicon/google-original.svg?" alt="Google Icon">
+              <p class="text-social-media">Continuar com Google</p>
+            </div>
+            <div class="other-account-login">
+              <img src="https://icongr.am/devicon/facebook-plain.svg?" alt="Facebook Icon">
+              <p class="text-social-media">Continuar com Facebook</p>
+            </div>     
+        </div>
+    </section>
+</body>
+</html>
