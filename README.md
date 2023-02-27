@@ -1,4 +1,4 @@
-# Landing Page - Criativo
+# Login Page - Study Guru
 
 Landing page for portfolio.
 
