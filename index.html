@@ -4,53 +4,94 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>StudyGuru | Login</title>
-  <link rel="stylesheet" href="style.css">
+  <title>StudyGuru |</title>
+  <link rel="stylesheet" href="./assets/styles/style_create_acc.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400&display=swap" rel="stylesheet">
+  <script src="./assets/js/index.js" defer></script>
 </head>
 <body>
     <section class="main-content">
         <div class="img-container">
           <h2>Study Guru.</h2>
-          <img src="./assets/login_image.fw.png" alt="Login Image" class="img-left">
+          <img src="./assets/images/login_image.fw.png" alt="Login Image" class="img-left">
         </div>
-        <div class="login-container">
-          <p class="default-text right">Já possui uma conta?   <a href="./login.html">  Login</a></p>
-          <h1>Crie sua conta</h1>
-          <label for="username" class="label-title">Usuário</label>
-          <input type="text" id="username" class="label-field">
-          <label for="email" class="label-title">Email</label>
-          <input type="email" id="email" class="label-field">
-            <div class="pass-confirm-container">
-              <div class="up-down">
-                <label for="password" class="label-title">Senha</label>
-                <input type="password" id="password" class="label-field pass">
+        <form action="./welcome.html">
+          <div class="login-container">
+            <p class="default-text right">Já possui uma conta?   <a id="login-modal">  Login</a></p>
+            <h1>Crie sua conta</h1>
+            <label for="username" class="label-title">Usuário</label>
+            <input type="text" id="username" class="label-field" required>
+            <label for="email" class="label-title">Email</label>
+            <input type="email" id="email" class="label-field" required>
+              <div class="pass-confirm-container">
+                <div class="up-down">
+                  <label for="password" class="label-title">Senha</label>
+                  <input type="password" id="password" class="label-field pass" required>
+                </div>
+                <div class="up-down">
+                  <label for="confirm-password" class="label-title">Repetir Senha</label>
+                  <input type="password" id="confirm-password" class="label-field pass" required>        
+                </div>              
               </div>
-              <div class="up-down">
-                <label for="confirm-password" class="label-title">Repetir Senha</label>
-                <input type="password" id="confirm-password" class="label-field pass">        
-              </div>              
-            </div>
-            <div class="side-side">
-              <input type="checkbox" name="agree-terms" id="agree-terms" class="checkbox-style">
-              <p class="default-text">Ao criar a conta, voce aceita os Termos de Uso e Serviço, e Politicas de Privacidade</p>
-            </div>    
-            <button class="main-button">Criar Conta</button>
-            <br>
-            <div id="linha-ou">
-              <span> Ou </span>
-            </div>
-            <div class="other-account-login">
-              <img src="https://icongr.am/devicon/google-original.svg?" alt="Google Icon">
-              <p class="text-social-media">Continuar com Google</p>
-            </div>
-            <div class="other-account-login">
-              <img src="https://icongr.am/devicon/facebook-plain.svg?" alt="Facebook Icon">
-              <p class="text-social-media">Continuar com Facebook</p>
-            </div>     
-        </div>
+              <div class="side-side">
+                <input type="checkbox" name="agree-terms" id="agree-terms" class="checkbox-style" required>
+                <p class="default-text">Ao criar a conta, voce aceita os Termos de Uso e Serviço, e Politicas de Privacidade</p>
+              </div>    
+              <button type="submit" class="main-button">Criar Conta</button>
+              <br>
+              <div id="linha-ou">
+                <span> Ou </span>
+              </div>
+              <div class="other-account-login">
+                <div class="icon-container">
+                  <img src="https://icongr.am/devicon/google-original.svg?" alt="Google Icon" class="icon-social-media">
+                </div>
+                <div class="text-container">
+                  <p class="text-social-media">Continuar com Google</p>
+                </div>
+              </div>
+              <div class="other-account-login">
+                <div class="icon-container">
+                  <img src="https://icongr.am/devicon/facebook-plain.svg?" alt="Facebook Icon" class="icon-social-media">
+                </div>
+                <div class="text-container">
+                  <p class="text-social-media">Continuar com Facebook</p>
+                </div>
+              </div>     
+          </div>
+        </form>        
+    </section>
+
+    <!-- MODAL login -->
+
+    <section class="modal" id="modal">
+      <div class="modal-content">
+        <div class="up-down center">
+          <button class="main-button close" id="close-modal">X</button>
+          <h1>Login</h1>
+          <label for="username-modal" class="label-title">Usuário</label>
+          <input type="text" id="username-modal" class="label-field login">
+          <label for="password-modal" class="label-title">Senha</label>
+          <input type="password" id="password-modal" class="label-field pass login">
+          <button class="main-button login">Login</button>
+          <p class="default-text"><a id="recovery-button">Esqueci minha senha</a></p>
+        </div>        
+      </div>
+    </section>
+
+        <!-- MODAL recovery -->
+
+    <section class="modal-recovery" id="modal-recovery">
+      <div class="modal-content">
+        <div class="up-down center">
+          <button class="main-button close" id="close-modal2">X</button>
+          <br>
+          <br>
+          <h1 class="h1-notifications">Link para recuperação enviado para o email!</h1> 
+        </div>        
+      </div>
     </section>
 </body>
 </html>
