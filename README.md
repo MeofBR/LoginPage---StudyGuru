@@ -1,6 +1,9 @@
 # Login Page - Study Guru
 
-Landing page for portfolio.
+Login Page for portfolio.
+
+# Final Result
+![Click to see the project](https://raw.githubusercontent.com/MeofBR/LoginPage---StudyGuru/master/final_image.jpg)
 
 
 ### 📋 Pré-requisites
